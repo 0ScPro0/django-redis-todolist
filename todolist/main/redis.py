@@ -6,7 +6,13 @@ from redis import Redis
 
 class RedisClient(Redis):
     def __init__(self, host: str, port: int, db: int, decode_responses: bool = True):
-        super().__init__(host, port, db, decode_responses)
+        super().__init__(
+            host=host,
+            port=port,
+            db=db,
+            decode_responses=decode_responses,
+            encoding="utf-8",
+        )
 
     def get_next_task_id(self) -> int:
         """Atomically generates the next ID for the task"""
