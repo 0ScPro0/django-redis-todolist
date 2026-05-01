@@ -35,7 +35,9 @@ class Task:
 
 
 @dataclass
-class TaskCreate(Task):
+class TaskCreate:
+    name: str
+    description: str
     status: TaskStatus = TaskStatus.NEW
 
 
