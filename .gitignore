@@ -1,0 +1,192 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+*.egg
+dist/
+build/
+*.log
+
+# Django
+*.log
+*.pot
+*.pyc
+db.sqlite3
+media/
+staticfiles/
+static/
+mediafiles/
+migrations/
+!apps/*/migrations/
+!apps/*/migrations/__init__.py
+
+# Secrets & Keys
+.env
+.env.local
+.env.production
+.secret
+key/
+keys/
+*.key
+*.pem
+*.crt
+.secrets/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-*
+.project
+.pydevproject
+
+# Testing
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+*.cover
+*.test
+test.db
+tests/__pycache__/
+
+# Redis (локальные данные Redis, если есть)
+*.rdb
+*.aof
+dump.rdb
+appendonly.aof
+redis-data/
+data/redis/
+
+# Docker
+docker-compose.override.yml
+docker-compose.local.yml
+*.pid
+*.cid
+.Dockerfile
+docker/
+
+# Logs
+logs/
+*.log
+log/
+debug.log
+error.log
+
+# OS
+Thumbs.db
+Desktop.ini
+*.tmp
+*.temp
+
+# Project specific (для вашей структуры)
+config/settings/local.py
+config/settings/development.local.py
+apps/*/migrations/
+!apps/*/migrations/__init__.py
+apps/*/__pycache__/
+
+# Caches
+*.cache
+.cache/
+.cache_*
+.nyc_output/
+.cache-loader/
+.parcel-cache/
+
+# Environment variables
+.env.*
+!.env.example
+!.env.sample
+*.secret
+secrets.yaml
+secrets.yml
+
+# Database backups
+*.bak
+*.backup
+*.dump
+*.sql
+*.sqlite
+
+# Package managers
+poetry.lock
+Pipfile.lock
+package-lock.json
+yarn.lock
+
+# Redis dump files
+dump.rdb
+appendonly-*.aof
+redis_*.log
+
+# VS Code specific
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
+*.code-workspace
+
+# PyCharm specific
+.idea/inspectionProfiles/
+.idea/dictionaries/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/runConfigurations.xml
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# pytest
+.pytest_cache/
+.testmondata/
+
+# Coverage reports
+.coverage*
+coverage.xml
+*.cover
+htmlcov/
+
+# Sphinx documentation
+docs/_build/
+
+# Redis configuration (если используются свои конфиги)
+redis-local.conf
+redis-custom.conf
+*.conf.local
+
+# Redis cluster nodes (если используете кластер)
+nodes.conf
+nodes-*.conf
+
+# Data directories
+data/
+tmp/
+temp/
+*.pid
+
+# Uploads (если используете загрузку файлов)
+uploads/
+media/uploads/
+media/temp/
