@@ -123,7 +123,6 @@ secrets.yml
 *.sqlite
 
 # Package managers
-poetry.lock
 Pipfile.lock
 package-lock.json
 yarn.lock
