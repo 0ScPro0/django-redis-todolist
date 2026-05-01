@@ -56,7 +56,7 @@ class TaskRepository:
         return bool(self.redis.delete(f"task_{task_id}"))
 
     def list_tasks(self) -> list[Task]:
-        """Возвращает все задачи"""
+        """Get all tasks"""
         keys: List[str] = self.redis.keys("task_*")  # type: ignore[assignment]
         tasks = []
 
